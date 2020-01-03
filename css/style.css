@@ -1,32 +1,201 @@
-@import url("/_global.css");
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500,700,900&display=swap');
+
+
+/*helper classes*/
+body{
+  
+   overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+.title-font{
+	font-family: 'Roboto', sans-serif;
+}
+.body-font{
+	font-family: 'PT Serif', serif;
+}
 
 .hc{
 	height:500px;
 }
 .primary-color{
 	color:#086375;
+
 }
 .secondary-color{
 	color:#3AAED8;
 }
+
+
+/*load screen style*/
+.nav-bg{
+    background: linear-gradient(90deg, rgba(77,27,152,1) 0%, rgba(130,51,226,1) 34%, rgba(113,22,143,1) 89%);
+}
+
+.logo-navbar{
+	width:75px;
+	height:75px;
+}
 .main-desc{
-	font-size:1.2rem;
+	font-size:1.5rem;
+}
+.sub-text{
+    font-size: 1.2;
 }
 .load-screen{
-	min-height:100vh;
+	min-height:85vh;
 }
+
+.load-screen h1{
+	margin-top:3rem;
+}
+#intro-image{
+	width:600px;
+	height: auto;
+	margin-top:35px;
+    border-bottom: 2px solid #122000;
+    border-right: 2px solid #122000;
+}
+
+
+
+/*
+.load-screen-bg{
+	height: 250px;
+	position: absolute;
+	bottom: 0;
+}
+*/
+
+#navbarNav ul .active a{
+	color: rgba(58, 174, 216, 0.9) !important;
+} 
+#navbarNav ul a {
+	margin-right: 20px;
+    padding-right: 10px;
+	font-size:1.3rem;
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+	color: rgba(58, 174, 216, 0.7);
+}
+
+/*Skills section style*/
+
 .tool-card{
-	height: 200px;
+	height: 180px;
 	width: 200px;
 	background-color: white;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 5px;
+	background-size: contain;
+	border-radius: 15px;
 
 }
+
 
 #mytools > .row .col-12:nth-child(1) {
-	background: rgb(77,27,152);
+/*	background: rgb(77,27,152);*/
     background: linear-gradient(90deg, rgba(77,27,152,1) 0%, rgba(130,51,226,1) 34%, rgba(113,22,143,1) 89%);
 }
+.bg-mycolor{
+     background: linear-gradient(90deg, rgba(77,27,152,1) 0%, rgba(130,51,226,1) 34%, rgba(113,22,143,1) 89%);
+}
+
+/*work section style*/
+.work-card{
+	height:200px;
+	width:250px;
+	margin:auto;
+}
+
+.work-card > div:nth-child(1){
+	height: 100%;
+	width: 100%;
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 20px 37px -15px rgba(94,90,94,0.74);
+	-moz-box-shadow: 0px 20px 37px -15px rgba(94,90,94,0.74);
+	box-shadow: 0px 20px 37px -15px rgba(94,90,94,0.74);
+	transition: all 0.3s ease-in-out;
+	cursor: pointer;
+	position: absolute;
+	z-index: 10;
+}
+
+.work-card-overlay{
+	background-color: rgba(82, 170, 94, 0.75);
+	height: 100%;
+	width: 100%;
+	top:0;
+	color: white;
+	cursor: pointer;
+}
+
+.work-card > div{
+	transform: translateY(-10px) scale(1.05);
+}
+.work-card > div:nth-child(1):hover{
+	transform: translateY(-10px) scale(1.05);
+	box-shadow: 0px 20px 37px -20px rgba(94,90,94,0.74);
+	z-index: -100;
+    
+}
+.work-card > div:nth-child(2):hover{
+	transform: translateY(-10px) scale(1.05);
+	box-shadow: 0px 20px 37px -20px rgba(94,90,94,0.74);
+	z-index: 100;
+}
+.custom-input:focus{
+    border-style: none;
+    border-color: none;
+    box-shadow: none;
+}
+
+
+.mycontact-bg{
+    background-color: #252934;
+    height: 400px;
+    
+   
+    
+}
+.mycontact{
+   padding-top: 50px;
+}
+
+
+
+/*Media queries*/
+
+@media (min-width: 576px) {
+
+	.work-card > div:nth-child(1){
+		-webkit-box-shadow: 0px 28px 37px -15px rgba(94,90,94,0.74);
+		-moz-box-shadow: 0px 28px 37px -15px rgba(94,90,94,0.74);
+		box-shadow: 0px 28px 37px -15px rgba(94,90,94,0.74);
+	}
+
+	.work-card > div{
+		transform: translateY(-10px) scale(1.05);
+	}
+	.work-card > div:nth-child(1):hover{
+		transform: translateY(-10px) scale(1.05);
+		box-shadow: 0px 28px 37px -20px rgba(94,90,94,0.74);
+		z-index: -100;
+	}
+	.work-card > div:nth-child(2):hover{
+		transform: translateY(-10px) scale(1.05);
+		box-shadow: 0px 28px 37px -20px rgba(94,90,94,0.74);
+		z-index: 100;
+	}
+}
+
+@media (min-width: 992px) { 
+	#navbarNav ul a {
+		margin-left: 30px;
+	}
+}
+
