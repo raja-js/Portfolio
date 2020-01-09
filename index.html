@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
 
 
     <title>My Portfolio</title>
@@ -19,38 +21,42 @@
 
 <body>
     <section id="intro-nav">
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-0">
                     <!--                   Navbar start -->
-                    <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-bg">
-                        <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" class="logo-navbar"></a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#about">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#mytools">Skills</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#mywork">Work</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#form-box">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+                    <div class="mynav-fix">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-transparent nav-bg">
+                            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" class="logo-navbar"></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#mytools">Skills</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#mywork">Work</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#form-box">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="container-fluid">
             <div class="row load-screen">
                 <div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
@@ -62,6 +68,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <!--    about section-->
 
@@ -74,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 order-1 about-title">
-                    <h1 class="title-h1 primary-color text-center display-4 mt-5">Let me introduce</h1>
+                    <h1 class="title-h1 primary-color display-4 mt-5">Let me introduce</h1>
                     <div class="paragraph p-4 about-us">
                         <p class="para secondary-color sub-text text-justify body-font">
                             Hey, I am Raja. I am a web developer. I like to develop elegant responsive front-end website and web application.
@@ -82,7 +89,7 @@
                             I am a passionate front-end web developer with hands-on experience with designing and developing e-commerce website, blogs using modern frameworks and technologies. Such as Bootstrap, Sass, NodeJs, Javascript and Php.
                         </p>
                     </div>
-                    <a type="button" class="btn btn-outline-primary ml-4 mb-5 mybtn-down" target="_blank" href="images/Raja's%20CV.pdf" download="Resume">Download CV</a>
+                    <a type="button" class="btn btn-outline-primary mb-5 mybtn-down" target="_blank" href="images/Raja's%20CV.pdf" download="Resume">Download CV</a>
                 </div>
             </div>
         </div>
@@ -335,15 +342,18 @@
         </div>
     </footer>
 
-
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

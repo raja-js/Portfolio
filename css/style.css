@@ -1,4 +1,5 @@
 /*helper classes*/
+
 body {
 
     overflow-x: hidden;
@@ -75,6 +76,15 @@ body {
     margin-left: 5px;
 }
 
+.navbar-toggler {
+    border: 1px solid white !important;
+}
+
+.navbar-toggler:hover {
+    background-color: antiquewhite !important;
+
+}
+
 #navbarNav ul .active a {
     color: rgba(58, 174, 216, 0.9) !important;
 }
@@ -90,9 +100,11 @@ body {
     color: white;
 }
 
+
 #navbarNav ul a:hover {
-    border-bottom: 2px solid white;
+    border-bottom: none;
     color: rgba(58, 174, 216, 0.9) !important;
+
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -105,22 +117,24 @@ body {
 /* Start About Area */
 
 
-.about-area .about-title h2 {
+.about-area .about-title h1 {
     display: block;
     font-family: 'Roboto', cursive;
     font-size: 2.5rem;
     font-weight: 500;
+    margin-left: 21px;
 }
-.about-image img{
+
+.about-image img {
     width: 85% !important;
     height: auto;
-    
+
 }
 
 
 .mybtn-down {
     padding: .4rem .4rem;
-
+    margin-left: 25px;
 }
 
 .mtbtn-down:hover {
@@ -206,6 +220,10 @@ body {
 /*====contact section end===*/
 /* Footer Area  */
 
+.footer-area {
+    min-height: 65vh !important;
+}
+
 footer.footer-area {
     padding: 5rem 0;
 }
@@ -228,6 +246,36 @@ footer.footer-area .social a:hover > i {
     color: #4458dc;
 }
 
+/*scroll-top*/
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    background-color: #DDD;
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #DDF;
+    color: rgb(77, 27, 152);
+}
+
+/*scroll-top*/
 /* End Footer  
 
 
@@ -240,9 +288,9 @@ footer.footer-area .social a:hover > i {
     .tool-card {
         height: 180px;
         width: 200px;
-        
+
     }
-    
+
 
     .about-area {
         width: 100%;
@@ -268,11 +316,25 @@ footer.footer-area .social a:hover > i {
 
         padding: .4rem 0;
     }
-   
-     
+
+
+
+
 }
 
 @media only screen and (min-width: 992px) {
+    .mynav-fix {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    #navbarNav ul a:hover {
+        border-bottom: 1px solid white;
+        color: rgba(58, 174, 216, 0.9) !important;
+    }
+
     #navbarNav ul a {
         margin-left: 30px;
     }
@@ -284,7 +346,7 @@ footer.footer-area .social a:hover > i {
     #intro-image {
         width: 600px;
         height: auto;
-        margin-top: 55px;
+        margin-top: 170px;
     }
 
     .about-area .about-title {
@@ -292,34 +354,53 @@ footer.footer-area .social a:hover > i {
         justify-content: center;
     }
 
+    .about-area .about-title h1 {
+        margin-left: 2.7rem !important;
+    }
+
+    .about-image .mx-auto {
+        margin-top: 35px;
+    }
+
     .about-area .about-title .paragraph > p {
         width: 90%;
         margin-left: 25px;
         padding: .4rem 0;
     }
+
     .mybtn-down {
-       
+
         margin-left: 50px !important;
-        
+
     }
-    .tools-padding{
+
+    .tools-padding {
         padding-top: 25px !important;
     }
-    .skills-head{
+
+    .skills-head {
         font-size: 2.2rem !important;
-        }
-    #mytools div:nth-child(4){
+    }
+
+    #mytools div:nth-child(4) {
         padding-top: 17px;
     }
-    #mytools div:nth-child(5){
+
+    #mytools div:nth-child(5) {
         padding-top: 17px;
     }
-    #mytools div:nth-child(6){
+
+    #mytools div:nth-child(6) {
         padding-top: 17px;
     }
+
     .tool-card {
-       background-size: 155px;
-        
+        background-size: 155px;
+
+    }
+
+    .footer-area {
+        min-height: 45vh !important;
     }
 
 }
