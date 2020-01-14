@@ -1,13 +1,13 @@
-/*helper classes*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap');
 
 body {
-
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
 .hc {
-    min-height: 500px;
+    min-height: 550px;
+    padding-top: 12px;
 }
 
 .primary-color {
@@ -55,8 +55,6 @@ body {
 #intro-image {
     width: 600px;
     height: auto;
-    /*    margin-top: 100px;*/
-
 }
 
 .load-screen-bg {
@@ -89,22 +87,24 @@ body {
     color: rgba(58, 174, 216, 0.9) !important;
 }
 
-#navbarNav ul {
+#navbarNav li {
     margin-right: 20px;
 }
 
-#navbarNav ul a {
+#navbarNav li a {
     margin-right: 20px;
-    padding-right: 25px;
     font-size: 1.3rem;
     color: white;
 }
 
-
-#navbarNav ul a:hover {
+#navbarNav li a:hover {
     border-bottom: none;
     color: rgba(58, 174, 216, 0.9) !important;
 
+}
+
+.navbarNav ul li {
+    background-color: transparent;
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -128,9 +128,7 @@ body {
 .about-image img {
     width: 85% !important;
     height: auto;
-
 }
-
 
 .mybtn-down {
     padding: .4rem .4rem;
@@ -169,6 +167,7 @@ body {
     background-repeat: no-repeat;
     background-size: 120px;
     border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 .tool-card {
@@ -188,13 +187,7 @@ body {
 
 
 /*=====contact section=====*/
-/*
-.custom-input:focus {
-    border-style: none;
-    border-color: none;
-    box-shadow: none;
-}
-*/
+
 
 .mycontact-bg {
     background-color: #252934;
@@ -215,6 +208,33 @@ body {
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: -webkit-focus-ring-color none;
+}
+
+.fas {
+    color: blueviolet;
+}
+
+.form-control {
+    /*    border-color: rgb(77, 27, 152)!important;*/
+    border-color: blueviolet;
+}
+
+.input-group-text {
+    border-color: blueviolet !important;
+}
+
+.submit-btn {
+    background-color: none !important;
+    color: rgb(77, 27, 152);
+    border-color: blueviolet;
+
+}
+
+.submit-btn:hover {
+    background-color: rgb(77, 27, 152) !important;
+    outline-color: rgb(77, 27, 152) !important;
+    border-color: none;
+    color: white;
 }
 
 /*====contact section end===*/
@@ -243,7 +263,7 @@ footer.footer-area .social a > i {
 }
 
 footer.footer-area .social a:hover > i {
-    color: #4458dc;
+    color: blueviolet;
 }
 
 /*scroll-top*/
@@ -283,14 +303,11 @@ footer.footer-area .social a:hover > i {
 
 @media only screen and (min-width: 576px) {
 
-
-
     .tool-card {
         height: 180px;
         width: 200px;
 
     }
-
 
     .about-area {
         width: 100%;
@@ -316,13 +333,10 @@ footer.footer-area .social a:hover > i {
 
         padding: .4rem 0;
     }
-
-
-
-
 }
 
 @media only screen and (min-width: 992px) {
+
     .mynav-fix {
         position: fixed;
         top: 0;
@@ -330,12 +344,15 @@ footer.footer-area .social a:hover > i {
         z-index: 9999;
     }
 
-    #navbarNav ul a:hover {
+    #navbarNav li a:hover {
         border-bottom: 1px solid white;
         color: rgba(58, 174, 216, 0.9) !important;
+        box-sizing: border-box;
+        padding-bottom: 0;
+
     }
 
-    #navbarNav ul a {
+    #navbarNav ul a:last-child {
         margin-left: 30px;
     }
 
@@ -346,7 +363,27 @@ footer.footer-area .social a:hover > i {
     #intro-image {
         width: 600px;
         height: auto;
-        margin-top: 170px;
+        margin-top: 165px;
+    }
+
+    #aboutme-area {
+
+        top: -50px;
+    }
+    .row .mt-4{
+        width: 75%;
+        justify-content: center;
+    }
+    #mytools-area {
+        top: -95px;
+    }
+
+    #mywork-area {
+        top: -50px;
+    }
+
+    #formbox-area {
+        top: -60px;
     }
 
     .about-area .about-title {
@@ -371,7 +408,6 @@ footer.footer-area .social a:hover > i {
     .mybtn-down {
 
         margin-left: 50px !important;
-
     }
 
     .tools-padding {
@@ -394,13 +430,17 @@ footer.footer-area .social a:hover > i {
         padding-top: 17px;
     }
 
+    .hc {
+        min-height: 500px;
+        margin-top: 0;
+    }
+
     .tool-card {
         background-size: 155px;
-
+        margin-bottom: 7px;
     }
 
     .footer-area {
         min-height: 45vh !important;
     }
-
 }

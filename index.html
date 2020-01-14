@@ -2,26 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-
-
-
     <title>My Portfolio</title>
 </head>
 
 <body>
     <section id="intro-nav">
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-0">
@@ -38,16 +31,16 @@
                                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#about">About</a>
+                                        <a class="nav-link" href="#aboutme-area">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#mytools">Skills</a>
+                                        <a class="nav-link" href="#mytools-area">Skills</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#mywork">Work</a>
+                                        <a class="nav-link" href="#mywork-area">Work</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#form-box">Contact</a>
+                                        <a class="nav-link" href="#formbox-area">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -56,7 +49,6 @@
                 </div>
             </div>
         </div>
-
         <div class="container-fluid">
             <div class="row load-screen">
                 <div class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
@@ -68,11 +60,10 @@
                 </div>
             </div>
         </div>
-
     </section>
     <!--    about section-->
-
-    <section id="about" class="about-area">
+    <section id="about" class="about-area position-relative">
+        <span class="position-absolute" id="aboutme-area"></span>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12 order-sm-1 order-2">
@@ -94,15 +85,13 @@
             </div>
         </div>
     </section>
-
     <!--about section end-->
-
     <!--Skills section-->
-    <section class="container-fluid" id="mytools">
+    <section class="container-fluid position-relative" id="mytools">
+        <span class="position-absolute" id="mytools-area"></span>
         <h4 class="title-h1 primary-color text-center skills-head mt-5 mb-4">Languages and frameworks which I use</h4>
         <div class="row">
-
-            <div class="col-12 col-md-12 tools-padding hc">
+            <div class="col-12 col-md-12 tools-padding d-flex justify-content-center hc">
                 <div class="row mt-4">
                     <div class="col-6 col-sm-4 text-right">
                         <div class="p-1">
@@ -143,16 +132,12 @@
                     </div>
                 </div>
                 <!--row-->
-
             </div>
         </div>
     </section>
-
-
-
-    <!--  ======================= Project Area =============================  -->
-
-    <section id="mywork" class="project-area">
+    <!--   Project Area   -->
+    <section id="mywork" class="project-area position-relative">
+        <span class="position-absolute" id="mywork-area"></span>
         <div class="container">
             <div class="project-title pb-5">
                 <h1 class="title-h1 primary-color text-center">Recently Done Project</h1>
@@ -279,10 +264,10 @@
             </div>
         </div>
     </section>
-
-    <!--  ======================= End Project Area =============================  -->
+    <!--   End Project Area   -->
     <!--contact section start-->
-    <section id="formbox">
+    <section id="formbox" class="position-relative">
+        <span class="position-absolute" id="formbox-area"></span>
         <div class="container-fluid bg-footer">
             <div class="row justify-content-center">
                 <div class="col-md-4 mt-5 mb-5 bg-light rounded">
@@ -315,7 +300,7 @@
                             <textarea name="msg" id="msg" class="form-control" placeholder="Write your message" cols="30" rows="4" required></textarea>
                         </div>
                         <div class="form-group text-center">
-                            <input type="submit" name="submit" id="submit" class="btn btn-outline-primary btn-group" value="Submit">
+                            <input type="submit" name="submit" id="submit" class="btn btn submit-btn btn-group" value="Submit">
                         </div>
                     </form>
                 </div>
@@ -323,7 +308,6 @@
         </div>
     </section>
     <!--    contact section end-->
-
     <footer class="footer-area">
         <div class="container">
             <div class="">
@@ -341,18 +325,16 @@
             </div>
         </div>
     </footer>
-
-<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+    <a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    
-<!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+
+    <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
 </body>
 
