@@ -11,11 +11,11 @@ body {
 }
 
 .primary-color {
-    color: #086375;
+color: #0c2461;
 }
 
 .secondary-color {
-    color: #3AAED8;
+    color: #6a89cc;
 }
 
 /*load screen style*/
@@ -123,6 +123,10 @@ body {
     font-size: 2.5rem;
     font-weight: 500;
     margin-left: 21px;
+}
+
+h1 a{
+    color: #182C61;
 }
 
 .about-image img {
